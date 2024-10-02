@@ -1,0 +1,498 @@
+[
+{
+    "behaviour": "match_esxi",
+    "application_name": "vsish",
+    "exceptions": {
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/vsish-static/vsish-static",
+    "cmd_prefix": ""
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "vmkvsitools",
+    "exceptions": {"7.0.0" : [
+      {
+        "min_build": 15843807,
+        "cmd_path": "{buildtree}/publish/debug/vmkvsitools-static"
+      }
+    ],
+      "7.0.1" : [
+        {
+          "min_build": 16850804,
+          "cmd_path": "{buildtree}/publish/debug/vmkvsitools-static"
+        }
+      ],
+      "7.0.2" : [
+        {
+          "min_build": 17630552,
+          "cmd_path": "{buildtree}/publish/debug/vmkvsitools-static"
+        }
+      ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/vmkvsitools-static/vmkvsitools-static",
+    "cmd_prefix": ""
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "vmcallstackview",
+    "exceptions": {},
+    "cmd_path": "{buildtree}/bora/support/tools/java/vmcallstackview.jar",
+    "cmd_prefix": "/build/toolchain/lin32/jdk-1.6.0_13/bin/java -Xmx512M -jar"
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "uwstats",
+    "exceptions": {"7.0.0" : [
+      {
+        "min_build": 15843807,
+        "cmd_path": "{buildtree}/publish/debug/uwstats-static"
+      }
+    ],
+      "7.0.1" : [
+        {
+          "min_build": 16850804,
+          "cmd_path": "{buildtree}/publish/debug/uwstats-static"
+        }
+      ],
+      "7.0.2" : [
+        {
+          "min_build": 17630552,
+          "cmd_path": "{buildtree}/publish/debug/uwstats-static"
+        }
+      ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/uwstats-static/uwstats-static",
+    "cmd_prefix": ""
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "net-stats",
+    "exceptions": {"7.0.0" : [
+      {
+        "min_build": 15843807,
+        "cmd_path": "{buildtree}/publish/debug/net-stats-static"
+      }
+    ],
+      "7.0.1" : [
+        {
+          "min_build": 16850804,
+          "cmd_path": "{buildtree}/publish/debug/net-stats-static"
+        }
+      ],
+      "7.0.2" : [
+        {
+          "min_build": 17630552,
+          "cmd_path": "{buildtree}/publish/debug/net-stats-static"
+        }
+      ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/net-stats-static/net-stats-static",
+    "cmd_prefix": ""
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "vmkdump",
+    "exceptions": {
+                  "6.7.0" : [
+                    {
+                      "min_build": 8169922,
+                      "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/vmware-esx-debug-tools/linux64/vmkdump_extract"
+                    }
+                  ],
+              "7.0.0" : [
+              {
+                "min_build": 15843807,
+                "cmd_path": "{buildtree}/publish/debug/vmkdump_extract"
+              }
+            ],
+      "7.0.1" : [
+        {
+          "min_build": 16850804,
+          "cmd_path": "{buildtree}/publish/debug/vmkdump_extract"
+        }
+      ],
+      "7.0.2" : [
+        {
+          "min_build": 17630552,
+          "cmd_path": "{buildtree}/publish/debug/vmkdump_extract"
+        }
+      ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/vmkdump_extract/vmkdump_extract",
+    "cmd_prefix": "LD_LIBRARY_LIST",
+    "LD_LIBRARY_LIST": [
+        "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+        "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libcrypto.so.1.0.2",
+        "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so.1.0.2"
+    ]
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "memstats",
+    "exceptions": {"7.0.0" : [
+      {
+        "min_build": 15843807,
+        "cmd_path": "{buildtree}/publish/debug/memstats-static"
+      }
+    ],
+      "7.0.1" : [
+        {
+          "min_build": 16850804,
+          "cmd_path": "{buildtree}/publish/debug/memstats-static"
+        }
+      ],
+      "7.0.2" : [
+        {
+          "min_build": 17630552,
+          "cmd_path": "{buildtree}/publish/debug/memstats-static"
+        }
+      ],
+      "7.0.3" : [
+        {
+          "min_build": 17630552,
+          "cmd_path": "{buildtree}/publish/debug/memstats-static"
+        }
+      ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/memstats-static/memstats-static",
+    "cmd_prefix": ""
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "sched-stats",
+    "exceptions": { "7.0.0" : [
+      {
+        "min_build": 15843807,
+        "cmd_path": "{buildtree}/publish/debug/sched-stats-static"
+      }
+    ],
+      "7.0.1" : [
+        {
+          "min_build": 16850804,
+          "cmd_path": "{buildtree}/publish/debug/sched-stats-static"
+        }
+      ],
+      "7.0.2" : [
+        {
+          "min_build": 17630552,
+          "cmd_path": "{buildtree}/publish/debug/sched-stats-static"
+        }
+      ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/sched-stats-static/sched-stats-static",
+    "cmd_prefix": ""
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "vsanTraceReader",
+    "exceptions": { "6.0.0": [
+        {
+            "min_build": 3620759,
+            "behaviour": "match_vib",
+            "vib_name": "vsan",
+            "cmd_path": "{buildtree}/bora/build/esxvsan/{buildtype}/vsan/usr/lib/vmware/vsan/bin/vsanTraceReader"
+        }
+        ],
+            "6.5.0": [
+            {
+                "min_build": 5310538,
+                "behaviour": "match_vib",
+                "vib_name": "vsan",
+                "cmd_path": "{buildtree}/bora/build/esxvsan/{buildtype}/vsan/usr/lib/vmware/vsan/bin/vsanTraceReader"
+            }
+        ],
+            "6.7.0": [
+            {
+                "min_build": 8169922,
+                "behaviour": "match_esxi",
+                "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/vsan/usr/lib/vmware/vsan/bin/vsanTraceReader"
+            }
+        ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/vsanTraceReader/vsanTraceReader",
+    "cmd_prefix": ""
+},
+{
+    "behaviour": "latest_match_criteria",
+    "application_name": "voma",
+    "cmd_path": "{buildtree}/bora/build/scons/package/devel/linux32/{buildtype}/esx/apps/voma/voma",
+    "cmd_prefix": "",
+    "criteria": {
+        "product": "server",
+        "branch": "super-main",
+        "buildtype": "beta",
+        "buildstate": "succeeded",
+        "ondisk": true
+    },
+    "exceptions": {}
+},
+{
+    "behaviour": "match_esxi",
+    "application_name": "esxtop",
+    "LD_LIBRARY_LIST": [
+            "{buildtree}/bora/build/esx/{buildtype}/lib/libvmkctl.so",
+            "{buildtree}/bora/build/esx/{buildtype}/lib/libvmksysinfo.so",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+            "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_system-gcc44-mt-1_47.so.1.47.0",
+            "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_filesystem-gcc44-mt-1_47.so.1.47.0",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvsanlib.so",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoVob.so",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoNoVob.so",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpollDefault.so",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmsnapshot.so",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libtreestructs.so",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libz.so.1",
+            "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libstdc++.so.6"
+    ],
+    "exceptions": {
+        "6.0.0": [
+            {
+                "min_build": 5,
+                "max_build": 3073146,
+                "LD_LIBRARY_LIST" : [
+                    "{self_path}/60workaround/2494585/libvmkctl.so",
+                    "{self_path}/60workaround/2494585/libvmkuser.so.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/lib/libvmksysinfo.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvsanlib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoVob.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoNoVob.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpollDefault.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmsnapshot.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libtreestructs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libz.so.1",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_chrono-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_regex-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_filesystem-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_system-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libdvs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libhwinfo.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/liblicensecheck.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkfslib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkmgmt.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkmod.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvobuser.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libstdc++.so.6",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/lib/libvsanvmkctl.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/lib/libvsanlib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/usr/lib/libslp.so.1",
+                    "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_system-gcc44-mt-1_47.so.1.47.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libgcc_s.so.1",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libxml2.so.2",
+                    "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_filesystem-gcc44-mt-1_47.so.1.47.0"
+                ]
+            },
+            {
+                "min_build": 3073146,
+                "max_build": 3620759,
+                "LD_LIBRARY_LIST" : [
+                    "{self_path}/60workaround/3073146/libvmkctl.so",
+                    "{self_path}/60workaround/2494585/libvmkuser.so.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/lib/libvmksysinfo.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvsanlib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoVob.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoNoVob.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpollDefault.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmsnapshot.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libtreestructs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libz.so.1",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_chrono-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_regex-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_filesystem-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_system-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libdvs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libhwinfo.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/liblicensecheck.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkfslib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkmgmt.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkmod.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvobuser.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libstdc++.so.6",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/lib/libvsanvmkctl.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/lib/libvsanlib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/usr/lib/libslp.so.1",
+                    "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_system-gcc44-mt-1_47.so.1.47.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libgcc_s.so.1",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libxml2.so.2",
+                    "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_filesystem-gcc44-mt-1_47.so.1.47.0"
+                ]
+            },
+            {
+                "min_build": 3620759,
+                "LD_LIBRARY_LIST": [
+                    "{self_path}/60workaround/3073146/libvmkctl.so",
+                    "{self_path}/60workaround/3073146/libvsanlib.so",
+                    "{self_path}/60workaround/2494585/libvmkuser.so.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/lib/libvmksysinfo.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoVob.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmksysinfoNoVob.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpollDefault.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmsnapshot.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libtreestructs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libz.so.1",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_chrono-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_regex-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_filesystem-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_system-gcc46-mt-1_55.so.1.55.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libdvs.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libhwinfo.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/liblicensecheck.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkfslib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkmgmt.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmkmod.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvobuser.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libstdc++.so.6",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/lib/libvsanvmkctl.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/lib/libvsanlib.so",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys/usr/lib/libslp.so.1",
+                    "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_system-gcc44-mt-1_47.so.1.47.0",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libgcc_s.so.1",
+                    "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libxml2.so.2",
+                    "{buildtree}/build/linux64/bora/build/esx/{buildtype}/vmvisor/sys-boot/usr/lib/libboost_filesystem-gcc44-mt-1_47.so.1.47.0"
+                ]
+            }
+        ],
+        "6.5.0": [
+            {
+                "min_build": 4564106,
+                "behaviour" : "MESSAGE",
+                "message" : "esxtop is no longer supported on linux after 6.5 GA see KB: https://ikb.vmware.com/kb/2149457"
+            }
+        ]
+    },
+    "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/esxtop/esxtop",
+    "cmd_prefix": "LD_LIBRARY_LIST"
+},
+    {
+    "behaviour": "latest_match_criteria",
+    "application_name": "vmss2core",
+    "cmd_path": "{buildtree}/bora/build/{product}/{buildtype}/linux64/stage/vmis/stage/vmware-workstation/bin/vmss2core",
+    "cmd_prefix": "",
+    "criteria": {
+        "product": "ws",
+        "branch__startswith": "hosted",
+        "buildtype": "release",
+        "buildstate": "succeeded",
+        "releasetype": "GA"
+    },
+    "exceptions": {}
+},
+  {
+  "behaviour": "latest_match_criteria",
+  "application_name": "vmss2core-dbg",
+  "cmd_path": "{buildtree}/bora/build/{product}/{buildtype}/linux64/stage/vmis/stage/vmware-workstation/bin/vmss2core",
+  "cmd_prefix": "",
+  "criteria": {
+    "product": "ws",
+    "branch__startswith": "hosted",
+    "buildtype": "obj",
+    "buildstate": "succeeded",
+    "releasetype": "GA",
+    "ondisk": true
+  },
+  "exceptions": {}
+},
+    {
+      "behaviour": "latest_match_criteria",
+      "application_name": "mcaDecode",
+      "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/apps/mcaDecode/mcaDecode",
+      "cmd_prefix": "",
+      "criteria": {
+        "product": "server",
+        "branch": "main",
+        "buildstate": "succeeded",
+        "buildtype": "release",
+        "releasetype": "GA",
+        "ondisk": true
+        },
+      "exceptions": {}
+    },
+    {
+      "behaviour": "latest_match_criteria",
+      "application_name": "debug-vc-core",
+      "cmd_path": "{buildtree}/bora/support/scripts/debug-vc-core",
+      "cmd_prefix": "",
+      "criteria": {
+        "product": "vcenter-all",
+        "branch": "main",
+        "buildstate": "succeeded",
+        "buildtype": "release",
+        "releasetype": "GA",
+        "ondisk": true
+        },
+      "exceptions": {}
+    },
+  {
+        "application_name": "vmkpython2",
+        "exceptions": {
+          "6.0.0": [
+            {
+              "behaviour": "match_esxi",
+              "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/bin/python",
+              "cmd_prefix": "LD_LIBRARY_LIST",
+              "LD_LIBRARY_LIST": [
+                 "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+                 "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libcrypto.so.1.0.1",
+                 "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so.1.0.2",
+                 "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpython2.7.so.1.0",
+                 "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/python2.7/lib-dynload/_pyvsilib.so"
+            ]
+            }
+          ]},
+        "behaviour" : "MESSAGE",
+        "message" : "ESXi moved to python 3 in 6.5.0, AMR only provides support for python 2 with ESXi 6.0.0"
+    },
+    {
+        "behaviour": "match_esxi",
+        "application_name": "vmkpython3",
+        "exceptions": {
+          "6.0.0": [
+            {
+                "behaviour" : "MESSAGE",
+                "message" : "ESXi moved to python 3 in 6.5.0"
+            }
+          ]
+        },
+        "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/bin/python3",
+        "cmd_prefix": "LD_LIBRARY_LIST",
+        "LD_LIBRARY_LIST": [
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libcrypto.so.1.0.2",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so.1.0.2",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpython3.5m.so.1.0",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/python3.5/lib-dynload/_pyvsilib.so"
+        ]
+    },
+    {
+        "behaviour": "match_esxi",
+        "application_name": "vmkpython",
+        "exceptions": {
+            "6.0.0": [
+                {
+                    "LD_LIBRARY_LIST": [
+                         "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+                         "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libcrypto.so.1.0.1",
+                         "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so.1.0.1",
+                         "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpython2.7.so.1.0",
+                         "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/python2.7/lib-dynload/_pyvsilib.so"
+                    ]
+                }
+            ]
+        },
+        "cmd_path": "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/bin/python3",
+        "cmd_prefix": "LD_LIBRARY_LIST",
+        "LD_LIBRARY_LIST": [
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libvmlibs.so",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libcrypto.so.1.0.2",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libssl.so.1.0.2",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/libpython3.5m.so.1.0",
+             "{buildtree}/bora/build/esx/{buildtype}/vmvisor/sys-boot/lib/python3.5/lib-dynload/_pyvsilib.so"
+        ]
+    }
+
+]
